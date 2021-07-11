@@ -1,6 +1,10 @@
 param($diretorio)
 
-$ErrorActionPreference = "Stop"
+# Para o debuuger funciona no linux eu precisei cirar um link simbólico powershell
+# apontando para
+#      /opt/microsoft/powershell/7/pwsh
+
+$ErrorActionPreference = "Break"
 
 . .\ShaFile.PS1
 

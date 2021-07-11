@@ -5,9 +5,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Depurar script",            
-            "script": "${file}",
-            "args": [-diretorio /home/william}],
+            "name": "Depurar script",
+            "type": "PowerShell",                        
+            "script": "pwsh ./CalculaHashEmDiretorio.PS1",
+            "args": ["-diretorio /home/william"],
             "cwd": "${workspaceFolder}"
         }
     ]
